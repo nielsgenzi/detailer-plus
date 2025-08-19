@@ -1,15 +1,21 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import CtaSection from "@/components/CtaSection";
+import VslSection from "@/components/VslSection";
+import ResultsSection from "@/components/ResultsSection";
+import StrategySection from "@/components/StrategySection";
+import ScheduleSection from "@/components/ScheduleSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-hero">
+    <div className="min-h-screen bg-background">
       <Header />
       <HeroSection />
-      <FeaturesSection />
-      <CtaSection />
+      <VslSection />
+      <ResultsSection />
+      <StrategySection />
+      <ScheduleSection />
+      <Footer />
     </div>
   );
 };

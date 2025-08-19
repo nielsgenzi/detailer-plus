@@ -5,15 +5,15 @@ import heroImage from "@/assets/hero-auto-detailing.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
           alt="Professional auto detailing service"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60"></div>
+        <div className="absolute inset-0 bg-gradient-dark/80"></div>
       </div>
       
       {/* Content */}
@@ -30,15 +30,15 @@ const HeroSection = () => {
         
         {/* Main Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          <span className="text-foreground">The Performance-Based</span><br/>
+          <span className="text-white">The Performance-Based</span><br/>
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Client Acquisition Platform
           </span><br/>
-          <span className="text-foreground">Built for Auto Detailers</span>
+          <span className="text-white">Built for Auto Detailers</span>
         </h1>
         
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed">
           Stop wasting money on leads that don't convert. DetailMax delivers exclusive, 
           high-value clients directly to qualified auto detailing professionals across the U.S.
         </p>
@@ -72,7 +72,7 @@ const HeroSection = () => {
         </div>
         
         {/* Social Proof */}
-        <p className="text-muted-foreground text-sm">
+        <p className="text-white/60 text-sm">
           Join the fastest-growing auto detailing companies in America
         </p>
       </div>

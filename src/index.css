@@ -9,23 +9,23 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 20% 4%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 210 40% 8%;
 
-    --card: 213 27% 6%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 8%;
 
-    --popover: 213 27% 6%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 8%;
 
     --primary: 213 94% 68%;
     --primary-foreground: 210 20% 4%;
 
-    --secondary: 215 25% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 210 40% 8%;
 
-    --muted: 215 25% 12%;
-    --muted-foreground: 217 10% 65%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 215 16% 47%;
 
     --accent: 213 100% 60%;
     --accent-foreground: 210 20% 4%;
@@ -33,14 +33,15 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 25% 18%;
-    --input: 215 25% 18%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
     --ring: 213 94% 68%;
 
     /* Custom design tokens for auto detailing theme */
     --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(220 100% 50%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 20% 4%) 0%, hsl(213 27% 8%) 50%, hsl(220 50% 12%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(213 27% 6%) 0%, hsl(215 25% 8%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(195 100% 15%) 0%, hsl(195 100% 12%) 50%, hsl(195 100% 8%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(195 100% 15%) 0%, hsl(195 100% 12%) 50%, hsl(195 100% 8%) 100%);
     --shadow-glow: 0 0 40px hsl(213 94% 68% / 0.3);
     --shadow-elegant: 0 10px 30px -10px hsl(213 94% 68% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,9 +67,8 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Keep same dark theme as root since we're building a dark-themed site */
-    --background: 210 20% 4%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 210 40% 8%;
   }
 }
 
