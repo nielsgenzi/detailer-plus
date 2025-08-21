@@ -41,7 +41,7 @@ const StrategySection = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section id="strategy" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -117,7 +117,12 @@ const StrategySection = () => {
                 Join successful auto detailing companies who've partnered with DetailMax 
                 to consistently add $75K+ in monthly revenue.
               </p>
-              <Button variant="primary" size="lg" className="px-8 py-4 text-lg shadow-glow">
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="px-8 py-4 text-lg shadow-glow"
+                onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Schedule Strategy Call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

@@ -5,16 +5,7 @@ import heroImage from "@/assets/hero-auto-detailing.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Professional auto detailing service"
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-dark/80"></div>
-      </div>
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
@@ -61,11 +52,21 @@ const HeroSection = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <Button variant="primary" size="lg" className="px-8 py-4 text-lg shadow-glow">
+          <Button 
+            variant="primary" 
+            size="lg" 
+            className="px-8 py-4 text-lg shadow-glow"
+            onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Book Strategy Call
             <span className="ml-2">→</span>
           </Button>
-          <Button variant="secondary" size="lg" className="px-8 py-4 text-lg">
+          <Button 
+            variant="secondary" 
+            size="lg" 
+            className="px-8 py-4 text-lg"
+            onClick={() => document.getElementById('vsl')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <Play className="w-5 h-5 mr-2" />
             See How It Works
           </Button>

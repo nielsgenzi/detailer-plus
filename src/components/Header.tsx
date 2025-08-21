@@ -5,7 +5,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}>
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">D</span>
             </div>
@@ -13,21 +13,37 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#platform" className="text-muted-foreground hover:text-foreground transition-colors">
+            <button 
+              onClick={() => document.getElementById('vsl')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Platform
-            </a>
-            <a href="#results" className="text-muted-foreground hover:text-foreground transition-colors">
+            </button>
+            <button 
+              onClick={() => document.getElementById('results')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Results
-            </a>
-            <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
-              How It Works
-            </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-              Pricing
-            </a>
+            </button>
+            <button 
+              onClick={() => document.getElementById('strategy')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Strategy
+            </button>
+            <button 
+              onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Schedule
+            </button>
           </nav>
           
-          <Button variant="primary" className="shadow-glow">
+          <Button 
+            variant="primary" 
+            className="shadow-glow"
+            onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Book Strategy Call
           </Button>
         </div>

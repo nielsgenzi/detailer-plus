@@ -43,7 +43,7 @@ const ScheduleSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-dark relative overflow-hidden">
+    <section id="schedule" className="py-24 bg-gradient-dark relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-dark/90"></div>
       
