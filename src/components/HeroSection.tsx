@@ -31,12 +31,12 @@ when you get results.</p>
             <span className="font-semibold">20+ Total Clients</span>
           </div>
           <div className="flex items-center gap-2 text-primary">
-            <span className="text-2xl">💰</span>
-            <span className="font-semibold">$75K+ Avg Monthly Increase</span>
+            <span className="text-xl">🔍</span>
+            <span className="font-semibold">Google Reviews: 4.7 ⭐ (16 Reviews)</span>
           </div>
           <div className="flex items-center gap-2 text-primary">
-            <span className="text-2xl">✅</span>
-            <span className="font-semibold">Only Pay on Closed Jobs</span>
+            <span className="text-xl">⭐</span>
+            <span className="font-semibold">Trustpilot: 4.5 ⭐ (11 Reviews)</span>
           </div>
         </div>
         
