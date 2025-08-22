@@ -20,8 +20,12 @@ const HeroSection = () => {
         </div>
         
         {/* Main Headline */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white">
-          Do You Want More Customers?
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          <span className="text-white">The Performance-Based</span><br/>
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Client Acquisition Platform
+          </span><br/>
+          <span className="text-white">Built for Auto Detailers</span>
         </h1>
         
         {/* Subheadline */}
