@@ -47,8 +47,20 @@ when you get results.</p>
             </div>
           </div>
           <div className="flex items-center gap-2 text-primary">
-            <span className="text-xl">⭐</span>
-            <span className="font-semibold">Trustpilot: 4.5 ⭐ (11 Reviews)</span>
+            <div className="flex items-center gap-1">
+              <span className="font-semibold">Trustpilot:</span>
+              <div className="flex items-center">
+                <Star className="w-4 h-4 fill-green-500 text-green-500" />
+                <Star className="w-4 h-4 fill-green-500 text-green-500" />
+                <Star className="w-4 h-4 fill-green-500 text-green-500" />
+                <Star className="w-4 h-4 fill-green-500 text-green-500" />
+                <div className="relative">
+                  <Star className="w-4 h-4 text-green-500/30" />
+                  <Star className="w-4 h-4 fill-green-500 text-green-500 absolute top-0 left-0" style={{clipPath: 'inset(0 50% 0 0)'}} />
+                </div>
+              </div>
+              <span className="font-semibold ml-1">4.5 (11 Reviews)</span>
+            </div>
           </div>
         </div>
         
