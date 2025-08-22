@@ -34,13 +34,13 @@ when you get results.</p>
             <Search className="w-5 h-5" />
             <div className="flex items-center gap-1">
               <div className="flex items-center">
-                <Star className="w-4 h-4 fill-primary text-primary" />
-                <Star className="w-4 h-4 fill-primary text-primary" />
-                <Star className="w-4 h-4 fill-primary text-primary" />
-                <Star className="w-4 h-4 fill-primary text-primary" />
+                <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 <div className="relative">
-                  <Star className="w-4 h-4 text-primary/30" />
-                  <Star className="w-4 h-4 fill-primary text-primary absolute top-0 left-0" style={{clipPath: 'inset(0 30% 0 0)'}} />
+                  <Star className="w-4 h-4 text-yellow-400/30" />
+                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400 absolute top-0 left-0" style={{clipPath: 'inset(0 30% 0 0)'}} />
                 </div>
               </div>
               <span className="font-semibold ml-1">4.7 (16 Reviews)</span>
