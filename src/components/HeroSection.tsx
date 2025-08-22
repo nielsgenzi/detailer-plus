@@ -9,29 +9,26 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         {/* Stats Badge */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <Badge variant="premium" className="px-4 py-2">
-            <span className="text-primary">✓</span> 200+ Auto Detailers
-          </Badge>
+          
           
         </div>
         
         {/* Main Headline */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 py-0">
           <br />
-          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent text-5xl py-[20px]">Auto Detailers</span><br />
-          <span className="text-white py-[10px]">Do You Want More Customers?</span>
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent text-5xl py-[10px]">Auto Detailers</span><br />
+          <span className="text-white py-[10px] text-6xl">Do You Want More Customers?</span>
         </h1>
         
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed">
-          How our proven system can get you 10, 20, or even 30 new high-paying customers every month for your detailing business. The best part is… you only pay when you get results.
-        </p>
+        <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed">How our proven system can get you 10, 20, or even 30 new high-paying customers every month for your detailing business. The best part is… you only pay
+when you get results.</p>
         
         {/* Key Stats */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12">
           <div className="flex items-center gap-2 text-primary">
             <span className="text-2xl">🚗</span>
-            <span className="font-semibold">200+ Active Partners</span>
+            <span className="font-semibold">20+ Total Clients</span>
           </div>
           <div className="flex items-center gap-2 text-primary">
             <span className="text-2xl">💰</span>
