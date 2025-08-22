@@ -2,10 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play } from "lucide-react";
 import heroImage from "@/assets/hero-auto-detailing.jpg";
-
 const HeroSection = () => {
-  return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
+  return <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
@@ -14,18 +12,14 @@ const HeroSection = () => {
           <Badge variant="premium" className="px-4 py-2">
             <span className="text-primary">✓</span> 200+ Auto Detailers
           </Badge>
-          <Badge variant="premium" className="px-4 py-2">
-            <span className="text-primary">✓</span> Adding $75K+ Monthly
-          </Badge>
+          
         </div>
         
         {/* Main Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          <span className="text-white">The Performance-Based</span><br/>
-          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Client Acquisition Platform
-          </span><br/>
-          <span className="text-white">Built for Auto Detailers</span>
+          <br />
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent text-5xl py-[20px]">Auto Detailers</span><br />
+          <span className="text-white py-[10px]">Do You Want More Customers?</span>
         </h1>
         
         {/* Subheadline */}
@@ -52,21 +46,15 @@ const HeroSection = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <Button 
-            variant="primary" 
-            size="lg" 
-            className="px-8 py-4 text-lg shadow-glow"
-            onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}
-          >
+          <Button variant="primary" size="lg" className="px-8 py-4 text-lg shadow-glow" onClick={() => document.getElementById('schedule')?.scrollIntoView({
+          behavior: 'smooth'
+        })}>
             Book Strategy Call
             <span className="ml-2">→</span>
           </Button>
-          <Button 
-            variant="secondary" 
-            size="lg" 
-            className="px-8 py-4 text-lg"
-            onClick={() => document.getElementById('vsl')?.scrollIntoView({ behavior: 'smooth' })}
-          >
+          <Button variant="secondary" size="lg" className="px-8 py-4 text-lg" onClick={() => document.getElementById('vsl')?.scrollIntoView({
+          behavior: 'smooth'
+        })}>
             <Play className="w-5 h-5 mr-2" />
             See How It Works
           </Button>
@@ -84,8 +72,6 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
