@@ -24,8 +24,7 @@ const HeroSection = () => {
         
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Stop wasting money on leads that don't convert. DetailMax delivers exclusive, 
-          high-value clients directly to qualified auto detailing professionals across the U.S.
+          How our proven system can get you 10, 20, or even 30 new high-paying customers every month for your detailing business. The best part is… you only pay when you get results.
         </p>
         
         {/* Key Stats */}
