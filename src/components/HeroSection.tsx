@@ -9,8 +9,9 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         {/* Stats Badge */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          
-          
+          <Badge variant="premium" className="text-sm px-4 py-2">
+            ✓20+ Total Clients
+          </Badge>
         </div>
         
         {/* Main Headline */}
