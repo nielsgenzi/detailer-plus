@@ -27,8 +27,8 @@ when you get results.</p>
         {/* Key Stats */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12">
           <div className="flex items-center gap-2 text-primary">
-            <span className="text-2xl">🚗</span>
-            <span className="font-semibold">20+ Total Clients</span>
+            
+            
           </div>
           <div className="flex items-center gap-2 text-primary">
             <Search className="w-5 h-5" />
@@ -40,7 +40,9 @@ when you get results.</p>
                 <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 <div className="relative">
                   <Star className="w-4 h-4 text-yellow-400/30" />
-                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400 absolute top-0 left-0" style={{clipPath: 'inset(0 30% 0 0)'}} />
+                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400 absolute top-0 left-0" style={{
+                  clipPath: 'inset(0 30% 0 0)'
+                }} />
                 </div>
               </div>
               <span className="font-semibold ml-1">4.7 (16 Reviews)</span>
@@ -55,10 +57,12 @@ when you get results.</p>
                 <Star className="w-4 h-4 fill-green-500 text-green-500" />
                 <div className="relative">
                   <Star className="w-4 h-4 text-green-500/30" />
-                  <Star className="w-4 h-4 fill-green-500 text-green-500 absolute top-0 left-0" style={{clipPath: 'inset(0 50% 0 0)'}} />
+                  <Star className="w-4 h-4 fill-green-500 text-green-500 absolute top-0 left-0" style={{
+                  clipPath: 'inset(0 50% 0 0)'
+                }} />
                 </div>
               </div>
-              <span className="font-semibold ml-1">Trustpilot: 4.5 (11 Reviews)</span>
+              <span className="font-semibold ml-1">4.5 (11 Reviews)</span>
             </div>
           </div>
         </div>
