@@ -11,7 +11,7 @@ const StrategySection = () => {
   }, {
     icon: TrendingUp,
     title: "Step 2: Launch",
-    description: "Our team implements proven lead generation systems specifically designed for your territory and service offerings.",
+    description: "We set up your ads, website, social media, and backend systems. Once that's done, you will have 1-2 leads coming in daily.",
     timeline: "Week 2-3"
   }, {
     icon: Users,
