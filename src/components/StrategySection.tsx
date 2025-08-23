@@ -15,7 +15,7 @@ const StrategySection = () => {
     timeline: "Week 2-3"
   }, {
     icon: Users,
-    title: "Client Delivery",
+    title: "Step 3: Appointment Booking",
     description: "Start receiving pre-qualified, high-value clients ready to invest in premium auto detailing services.",
     timeline: "Week 4+"
   }];
