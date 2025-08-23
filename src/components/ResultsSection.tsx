@@ -18,7 +18,7 @@ const ResultsSection = () => {
     },
     {
       icon: TrendingUp,
-      value: "89%",
+      value: "5.4x",
       label: "Average Close Rate"
     },
     {
