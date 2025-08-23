@@ -1,38 +1,57 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, TrendingUp, DollarSign, MapPin, Play, Star } from "lucide-react";
+import { 
+  Users, 
+  TrendingUp, 
+  DollarSign, 
+  MapPin,
+  Play,
+  Star
+} from "lucide-react";
+
 const ResultsSection = () => {
-  const stats = [{
-    icon: Users,
-    value: "127+",
-    label: "Active Partners"
-  }, {
-    icon: TrendingUp,
-    value: "89%",
-    label: "Average Close Rate"
-  }, {
-    icon: DollarSign,
-    value: "$50K",
-    label: "Average Monthly Increase"
-  }, {
-    icon: MapPin,
-    value: "48",
-    label: "U.S. States Served"
-  }];
-  const testimonials = [{
-    name: "Mike Rodriguez",
-    business: "Elite Auto Detailing",
-    result: "$87K monthly increase",
-    quote: "DetailMax transformed our business. We went from struggling to book clients to having a 3-week waiting list.",
-    rating: 5
-  }, {
-    name: "Sarah Johnson",
-    business: "Pristine Car Care",
-    result: "$63K monthly increase",
-    quote: "The quality of leads is incredible. Every client that comes through DetailMax is ready to invest in premium services.",
-    rating: 5
-  }];
-  return <section id="results" className="py-24 bg-muted/30">
+  const stats = [
+    {
+      icon: Users,
+      value: "127+",
+      label: "Active Partners"
+    },
+    {
+      icon: TrendingUp,
+      value: "89%",
+      label: "Average Close Rate"
+    },
+    {
+      icon: DollarSign,
+      value: "$50K",
+      label: "Average Monthly Increase"
+    },
+    {
+      icon: MapPin,
+      value: "48",
+      label: "U.S. States Served"
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "Mike Rodriguez",
+      business: "Elite Auto Detailing",
+      result: "$87K monthly increase",
+      quote: "DetailMax transformed our business. We went from struggling to book clients to having a 3-week waiting list.",
+      rating: 5
+    },
+    {
+      name: "Sarah Johnson",
+      business: "Pristine Car Care",
+      result: "$63K monthly increase",
+      quote: "The quality of leads is incredible. Every client that comes through DetailMax is ready to invest in premium services.",
+      rating: 5
+    }
+  ];
+
+  return (
+    <section id="results" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -40,19 +59,23 @@ const ResultsSection = () => {
             Proven Results
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Results From Companies
+            Results From Detailers
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              {" "}Just Like Yours!
+              {" "}Just Like You!
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">See how auto detailing professionals across America are scaling their businesses with the Detailer Plus System.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            See how auto detailing professionals across America are scaling their businesses 
+            with DetailMax's performance-based platform.
+          </p>
         </div>
         
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => {
-          const IconComponent = stat.icon;
-          return <Card key={index} className="text-center bg-background border-border/50">
+            const IconComponent = stat.icon;
+            return (
+              <Card key={index} className="text-center bg-background border-border/50">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-6 h-6 text-white" />
@@ -64,8 +87,9 @@ const ResultsSection = () => {
                     {stat.label}
                   </div>
                 </CardContent>
-              </Card>;
-        })}
+              </Card>
+            );
+          })}
         </div>
 
         {/* Video Testimonials */}
@@ -121,10 +145,13 @@ const ResultsSection = () => {
 
         {/* Written Testimonials */}
         <div className="grid md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => <Card key={index} className="bg-background border-border/50">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="bg-background border-border/50">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />)}
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
                 </div>
                 <blockquote className="text-foreground italic mb-6">
                   "{testimonial.quote}"
@@ -137,9 +164,12 @@ const ResultsSection = () => {
                   <Badge variant="secondary">{testimonial.result}</Badge>
                 </div>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ResultsSection;
