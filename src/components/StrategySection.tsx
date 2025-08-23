@@ -5,7 +5,7 @@ import { Target, TrendingUp, Users, CheckCircle, ArrowRight } from "lucide-react
 const StrategySection = () => {
   const steps = [{
     icon: Target,
-    title: "Market Analysis",
+    title: "Step 1: Strategy Call",
     description: "We analyze your local market to identify the highest-value opportunities and create a custom acquisition strategy.",
     timeline: "Week 1"
   }, {
