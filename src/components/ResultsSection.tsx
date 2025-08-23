@@ -13,7 +13,7 @@ const ResultsSection = () => {
   const stats = [
     {
       icon: Users,
-      value: "127+",
+      value: "20+",
       label: "Active Partners"
     },
     {
