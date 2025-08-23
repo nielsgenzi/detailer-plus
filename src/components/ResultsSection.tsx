@@ -23,7 +23,7 @@ const ResultsSection = () => {
     },
     {
       icon: DollarSign,
-      value: "$50K",
+      value: "$11K",
       label: "Average Monthly Increase"
     },
     {
