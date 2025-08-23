@@ -6,7 +6,7 @@ const StrategySection = () => {
   const steps = [{
     icon: Target,
     title: "Step 1: Strategy Call",
-    description: "We analyze your local market to identify the highest-value opportunities and create a custom acquisition strategy.",
+    description: "We talk about your current situation and goals to create a tailored growth plan based on your needs.",
     timeline: "Week 1"
   }, {
     icon: TrendingUp,
