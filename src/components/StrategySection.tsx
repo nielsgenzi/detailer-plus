@@ -16,7 +16,7 @@ const StrategySection = () => {
   }, {
     icon: Users,
     title: "Step 3: Appointment Booking",
-    description: "Start receiving pre-qualified, high-value clients ready to invest in premium auto detailing services.",
+    description: "We text and call the leads as soon as they come in, to book an appointment. All you have to worry about is delivering a good service.",
     timeline: "Week 4+"
   }];
   const benefits = ["Exclusive territory rights in your market", "Only pay for closed jobs, not leads", "Pre-qualified clients with verified budgets", "Dedicated success manager support", "Real-time performance analytics", "Multi-channel lead generation approach"];
