@@ -14,7 +14,7 @@ const ResultsSection = () => {
     {
       icon: Users,
       value: "20+",
-      label: "Active Partners"
+      label: "Shops Served"
     },
     {
       icon: TrendingUp,
