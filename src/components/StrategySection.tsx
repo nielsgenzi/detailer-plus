@@ -10,7 +10,7 @@ const StrategySection = () => {
     timeline: "Week 1"
   }, {
     icon: TrendingUp,
-    title: "Lead Generation Setup",
+    title: "Step 2: Launch",
     description: "Our team implements proven lead generation systems specifically designed for your territory and service offerings.",
     timeline: "Week 2-3"
   }, {
