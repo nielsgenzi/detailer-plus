@@ -19,7 +19,7 @@ const ResultsSection = () => {
     {
       icon: TrendingUp,
       value: "5.4x",
-      label: "Average Close Rate"
+      label: "Average ROI"
     },
     {
       icon: DollarSign,
