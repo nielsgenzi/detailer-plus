@@ -36,7 +36,7 @@ const ScheduleSection = () => {
           <p className="text-lg text-white/80 max-w-3xl mx-auto">Schedule a free no-obligations strategy call to see if we can help. You’ll also get some free coaching and material.</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="flex justify-center">
           {/* Left Column - Call Details */}
           
 
