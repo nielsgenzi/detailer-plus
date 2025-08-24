@@ -17,7 +17,7 @@ const Header = () => {
               onClick={() => document.getElementById('vsl')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Platform
+              How It Works
             </button>
             <button 
               onClick={() => document.getElementById('results')?.scrollIntoView({ behavior: 'smooth' })}
