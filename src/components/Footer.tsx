@@ -76,24 +76,24 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid lg:grid-cols-5 gap-8">
+          <div className="flex justify-center">
             {/* Company Info */}
-            <div className="lg:col-span-2">
-              <div className="flex items-center gap-2 mb-6">
+            <div className="text-center max-w-md">
+              <div className="flex items-center justify-center gap-2 mb-6">
                 <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">D</span>
                 </div>
-                <span className="text-xl font-bold text-foreground">DetailMax</span>
+                <span className="text-xl font-bold text-foreground">Detailer Plus</span>
               </div>
               <p className="text-muted-foreground mb-6 max-w-md">Let's get your detailing business to the next level!</p>
               
               {/* Contact Info */}
               <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-3">
+               <div className="flex items-center justify-center gap-3">
                   <Mail className="w-4 h-4 text-primary" />
                   <span className="text-muted-foreground text-sm">niels.genzi@gmail.com</span>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center gap-3">
                   <Phone className="w-4 h-4 text-primary" />
                   <span className="text-muted-foreground text-sm">+1 833-283-2108</span>
                 </div>
@@ -101,8 +101,8 @@ const Footer = () => {
               </div>
 
               {/* Social Links */}
-              <div className="flex items-center gap-4">
-                {socialLinks.map((social, index) => {
+              <div className="flex items-center justify-center gap-4">
+                 {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
                 return <a key={index} href={social.href} aria-label={social.label} className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                       <IconComponent className="w-4 h-4" />
@@ -121,15 +121,20 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="py-6 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="py-6 border-t border-border/50 flex flex-col md:flex-row items-center justify-center gap-4">
           <div className="flex items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © 2024 DetailMax. All rights reserved.
+              © 2024 Detailer Plus. All rights reserved.
             </p>
-            
+            <span className="text-muted-foreground text-sm">•</span>
+            <a href="#" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+              Privacy Policy
+            </a>
+            <span className="text-muted-foreground text-sm">•</span>
+            <a href="#" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+              Terms & Conditions
+            </a>
           </div>
-          
-          
         </div>
       </div>
     </footer>;
