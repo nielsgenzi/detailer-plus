@@ -14,7 +14,7 @@ const CtaSection = () => {
               </span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
-              Join successful auto detailing companies who've partnered with DetailMax 
+              Join successful auto detailing companies who've partnered with Detailer Plus 
               to consistently add $75K+ in monthly revenue.
             </p>
             <Button variant="primary" size="lg" className="px-12 py-4 text-lg shadow-glow">

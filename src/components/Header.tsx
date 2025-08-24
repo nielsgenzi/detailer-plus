@@ -9,7 +9,7 @@ const Header = () => {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">D</span>
             </div>
-            <span className="text-xl font-bold text-foreground">DetailMax</span>
+            <span className="text-xl font-bold text-foreground">Detailer Plus</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">

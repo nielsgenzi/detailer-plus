@@ -56,7 +56,7 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">D</span>
                 </div>
-                <span className="text-xl font-bold text-foreground">DetailMax</span>
+                <span className="text-xl font-bold text-foreground">Detailer Plus</span>
               </div>
               <p className="text-muted-foreground mb-6 max-w-md">
                 The performance-based client acquisition platform built specifically 
@@ -67,7 +67,7 @@ const Footer = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span className="text-muted-foreground text-sm">hello@detailmax.com</span>
+                  <span className="text-muted-foreground text-sm">hello@detailerplus.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-primary" />
@@ -166,7 +166,7 @@ const Footer = () => {
         <div className="py-6 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © 2024 DetailMax. All rights reserved.
+              © 2024 Detailer Plus. All rights reserved.
             </p>
             <Badge variant="secondary" className="text-xs">
               Performance-Based Platform

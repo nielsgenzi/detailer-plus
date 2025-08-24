@@ -38,14 +38,14 @@ const ResultsSection = () => {
       name: "Mike Rodriguez",
       business: "Elite Auto Detailing",
       result: "$87K monthly increase",
-      quote: "DetailMax transformed our business. We went from struggling to book clients to having a 3-week waiting list.",
+      quote: "Detailer Plus transformed our business. We went from struggling to book clients to having a 3-week waiting list.",
       rating: 5
     },
     {
       name: "Sarah Johnson",
       business: "Pristine Car Care",
       result: "$63K monthly increase",
-      quote: "The quality of leads is incredible. Every client that comes through DetailMax is ready to invest in premium services.",
+      quote: "The quality of leads is incredible. Every client that comes through Detailer Plus is ready to invest in premium services.",
       rating: 5
     }
   ];
@@ -66,7 +66,7 @@ const ResultsSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             See how auto detailing professionals across America are scaling their businesses 
-            with DetailMax's performance-based platform.
+            with Detailer Plus's performance-based platform.
           </p>
         </div>
         
@@ -112,7 +112,7 @@ const ResultsSection = () => {
                 <p className="text-muted-foreground text-sm mb-3">Elite Auto Detailing</p>
                 <Badge variant="secondary" className="mb-3">$87K Monthly Increase</Badge>
                 <p className="text-muted-foreground text-sm">
-                  "DetailMax transformed our business completely..."
+                  "Detailer Plus transformed our business completely..."
                 </p>
               </div>
             </CardContent>

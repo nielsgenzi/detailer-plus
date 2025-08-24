@@ -14,7 +14,7 @@ const FeaturesSection = () => {
     {
       icon: MapPin,
       title: "Exclusive Territory Rights",
-      description: "Own your market. Never compete with other DetailMax partners in your service area."
+      description: "Own your market. Never compete with other Detailer Plus partners in your service area."
     },
     {
       icon: Users,
@@ -52,7 +52,7 @@ const FeaturesSection = () => {
             Built for Scale, Optimized for Performance
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Unlike traditional lead generation services, DetailMax operates as a comprehensive{" "}
+            Unlike traditional lead generation services, Detailer Plus operates as a comprehensive{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               client acquisition platform
             </span>{" "}
