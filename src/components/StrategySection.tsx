@@ -65,40 +65,7 @@ const StrategySection = () => {
         </div>
 
         {/* Benefits and CTA */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">
-              What You Get When You Partner With DetailMax
-            </h3>
-            <div className="space-y-4">
-              {benefits.map((benefit, index) => <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">{benefit}</span>
-                </div>)}
-            </div>
-          </div>
-          
-          <Card className="bg-gradient-card border-border/50 shadow-elegant">
-            <CardContent className="p-8 text-center">
-              <h4 className="text-2xl font-bold mb-4 text-foreground">
-                Ready to Scale Your Business?
-              </h4>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Join successful auto detailing companies who've partnered with DetailMax 
-                to consistently add $75K+ in monthly revenue.
-              </p>
-              <Button variant="primary" size="lg" className="px-8 py-4 text-lg shadow-glow" onClick={() => document.getElementById('schedule')?.scrollIntoView({
-              behavior: 'smooth'
-            })}>
-                Schedule Strategy Call
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              <p className="text-muted-foreground text-sm mt-4">
-                45-minute strategy session • No commitment required
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+        
       </div>
     </section>;
 };
