@@ -93,51 +93,90 @@ const ResultsSection = () => {
         </div>
 
         {/* Video Testimonials */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           <Card className="bg-background border-border/50 overflow-hidden">
             <CardContent className="p-0">
-              <div className="relative aspect-video bg-muted flex items-center justify-center cursor-pointer group">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
-                <div className="relative text-center">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-6 h-6 text-primary ml-1" />
-                  </div>
-                  <p className="text-white font-semibold">
-                    Watch Success Story
-                  </p>
-                </div>
+              <div className="relative aspect-[9/16] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://drive.google.com/file/d/1N92KXHxkF1nUDn-2Vea5teGwRdaFIT16/preview"
+                  className="w-full h-full"
+                  allow="autoplay"
+                  title="Alex - Big Sky Detailing Testimonial"
+                />
               </div>
               <div className="p-6">
-                <h3 className="font-semibold text-foreground mb-2">Mike Rodriguez</h3>
-                <p className="text-muted-foreground text-sm mb-3">Elite Auto Detailing</p>
-                <Badge variant="secondary" className="mb-3">$87K Monthly Increase</Badge>
-                <p className="text-muted-foreground text-sm">
-                  "Detailer Plus transformed our business completely..."
+                <h3 className="font-semibold text-foreground mb-2">Alex</h3>
+                <p className="text-muted-foreground text-sm mb-3">Big Sky Detailing</p>
+                <Badge variant="secondary" className="mb-3">$4K → $12K Monthly</Badge>
+                <p className="text-muted-foreground text-sm mb-4 italic">
+                  "Now people are booking every day"
                 </p>
+                <a 
+                  href="https://bigskydetailing.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block w-full text-center bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                >
+                  Visit Website
+                </a>
               </div>
             </CardContent>
           </Card>
 
           <Card className="bg-background border-border/50 overflow-hidden">
             <CardContent className="p-0">
-              <div className="relative aspect-video bg-muted flex items-center justify-center cursor-pointer group">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
-                <div className="relative text-center">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-6 h-6 text-primary ml-1" />
-                  </div>
-                  <p className="text-white font-semibold">
-                    Watch Success Story
-                  </p>
-                </div>
+              <div className="relative aspect-[9/16] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://drive.google.com/file/d/1ChJAmI_5uC72GWZUfPPB5qrBCAI7AJJ5/preview"
+                  className="w-full h-full"
+                  allow="autoplay"
+                  title="Michael - Sharp G's Auto Detailing Testimonial"
+                />
               </div>
               <div className="p-6">
-                <h3 className="font-semibold text-foreground mb-2">Sarah Johnson</h3>
-                <p className="text-muted-foreground text-sm mb-3">Pristine Car Care</p>
-                <Badge variant="secondary" className="mb-3">$63K Monthly Increase</Badge>
-                <p className="text-muted-foreground text-sm">
-                  "The quality of leads is incredible..."
+                <h3 className="font-semibold text-foreground mb-2">Michael</h3>
+                <p className="text-muted-foreground text-sm mb-3">Sharp G's Auto Detailing</p>
+                <Badge variant="secondary" className="mb-3">$7K → $22K Monthly</Badge>
+                <p className="text-muted-foreground text-sm mb-4 italic">
+                  "I wake up knowing we got jobs lined up"
                 </p>
+                <a 
+                  href="https://sharpgsautodetailing.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block w-full text-center bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                >
+                  Visit Website
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-background border-border/50 overflow-hidden">
+            <CardContent className="p-0">
+              <div className="relative aspect-[9/16] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://drive.google.com/file/d/1Cct0H0eyBrwBwRJrEg4lUr_BkLFcGonz/preview"
+                  className="w-full h-full"
+                  allow="autoplay"
+                  title="Connor - Shucks Detailing Testimonial"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-semibold text-foreground mb-2">Connor</h3>
+                <p className="text-muted-foreground text-sm mb-3">Shucks Detailing</p>
+                <Badge variant="secondary" className="mb-3">$3K → $14K Monthly</Badge>
+                <p className="text-muted-foreground text-sm mb-4 italic">
+                  "It's been a total game changer"
+                </p>
+                <a 
+                  href="https://www.shucksdetailing.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block w-full text-center bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                >
+                  Visit Website
+                </a>
               </div>
             </CardContent>
           </Card>
