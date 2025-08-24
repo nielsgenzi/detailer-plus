@@ -54,9 +54,9 @@ const ScheduleSection = () => {
             Book Your Strategy Call
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
-            Ready to Add $50K+ Monthly to Your{" "}
+            Wanna learn more?{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Auto Detailing Business?
+              Let's talk!
             </span>
           </h2>
           <p className="text-lg text-white/80 max-w-3xl mx-auto">
