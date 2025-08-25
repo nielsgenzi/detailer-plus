@@ -56,8 +56,8 @@ const ScheduleSection = () => {
           {/* Left Column - Call Details */}
           
 
-          {/* Calendar Embed - Wider Layout */}
-          <Card className="bg-white/5 border-white/10 backdrop-blur-sm w-full max-w-5xl">
+          {/* Calendar Embed - Full width container */}
+          <Card className="bg-white/5 border-white/10 backdrop-blur-sm w-full">
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold text-white mb-6 text-center">
                 Schedule Your Call
@@ -66,9 +66,9 @@ const ScheduleSection = () => {
                 Select a time that works best for your schedule
               </p>
               
-              {/* Calendly Embed - Centered and wide for 2-column layout */}
-              <div className="flex justify-center">
-                <div className="calendly-inline-widget" data-url="https://calendly.com/niels-genzi/call" style={{minWidth:'1200px', height:'700px'}}></div>
+              {/* Calendly Embed - Remove constraints, let it expand naturally */}
+              <div className="w-full overflow-x-auto">
+                <div className="calendly-inline-widget mx-auto" data-url="https://calendly.com/niels-genzi/call" style={{minWidth:'1000px', width:'100%', height:'700px'}}></div>
               </div>
               
               <div className="mt-6 text-center">
