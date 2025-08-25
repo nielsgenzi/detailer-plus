@@ -66,8 +66,10 @@ const ScheduleSection = () => {
                 Select a time that works best for your schedule
               </p>
               
-              {/* Calendly Embed - Much wider to trigger 2-column layout */}
-              <div className="calendly-inline-widget" data-url="https://calendly.com/niels-genzi/call" style={{minWidth:'1200px', height:'700px'}}></div>
+              {/* Calendly Embed - Centered and wide for 2-column layout */}
+              <div className="flex justify-center">
+                <div className="calendly-inline-widget" data-url="https://calendly.com/niels-genzi/call" style={{minWidth:'1200px', height:'700px'}}></div>
+              </div>
               
               <div className="mt-6 text-center">
                 <p className="text-white/60 text-sm">
