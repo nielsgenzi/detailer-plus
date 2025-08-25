@@ -50,16 +50,9 @@ const ScheduleSection = () => {
                 Select a time that works best for your schedule
               </p>
               
-              {/* Calendar Placeholder */}
-              <div className="bg-white/10 border border-white/20 rounded-lg p-8 min-h-[400px] flex items-center justify-center">
-                <div className="text-center">
-                  <Calendar className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <p className="text-white/80 mb-2">Calendly Embed Goes Here</p>
-                  <p className="text-white/60 text-sm">
-                    Replace this placeholder with your Calendly embed code
-                  </p>
-                </div>
-              </div>
+              {/* Calendly Embed */}
+              <div className="calendly-inline-widget" data-url="https://calendly.com/niels-genzi/call" style={{minWidth:'320px', height:'700px'}}></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
               
               <div className="mt-6 text-center">
                 <p className="text-white/60 text-sm">
