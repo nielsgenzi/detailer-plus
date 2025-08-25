@@ -1,9 +1,7 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, CheckCircle, DollarSign, TrendingUp, Users } from "lucide-react";
 import { useEffect } from "react";
-
 const ScheduleSection = () => {
   const callDetails = ["Custom growth strategy for your market", "Territory analysis and opportunity assessment", "ROI projections and timeline expectations", "Detailed investment breakdown and terms"];
   const qualifications = ["Currently doing $300K+ in annual revenue", "Have capacity to take on additional projects", "Ready to invest in proven growth systems", "Serious about scaling your land clearing business"];
@@ -35,9 +33,7 @@ const ScheduleSection = () => {
       }
     };
   }, []);
-
-  return (
-    <section id="schedule" className="py-24 bg-gradient-dark relative overflow-hidden">
+  return <section id="schedule" className="py-24 bg-gradient-dark relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-dark/90"></div>
       
@@ -53,61 +49,12 @@ const ScheduleSection = () => {
               Let's talk!
             </span>
           </h2>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">Schedule a free no-obligations strategy call to see if we can help. You'll also get some free coaching and material.</p>
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">Schedule a free no-obligations strategy call to see if we can help. You’ll also get some free coaching and material.</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div className="flex justify-center">
           {/* Left Column - Call Details */}
-          <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <div className="flex items-center gap-3 mb-6">
-                <Calendar className="w-6 h-6 text-primary" />
-                <h3 className="text-xl font-semibold text-white">
-                  What We'll Cover
-                </h3>
-              </div>
-              
-              <div className="space-y-4 mb-8">
-                {callDetails.map((detail, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                    <span className="text-white/80">{detail}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="border-t border-white/10 pt-6 mb-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Clock className="w-5 h-5 text-primary" />
-                  <h4 className="font-semibold text-white">Who This Is For</h4>
-                </div>
-                <div className="space-y-3">
-                  {qualifications.map((qualification, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
-                      <span className="text-white/70 text-sm">{qualification}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="border-t border-white/10 pt-6">
-                <h4 className="font-semibold text-white mb-4">Success Metrics</h4>
-                <div className="grid grid-cols-3 gap-4">
-                  {stats.map((stat, index) => {
-                    const Icon = stat.icon;
-                    return (
-                      <div key={index} className="text-center">
-                        <Icon className="w-6 h-6 text-primary mx-auto mb-2" />
-                        <div className="text-xl font-bold text-white">{stat.value}</div>
-                        <div className="text-xs text-white/60">{stat.label}</div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          
 
           {/* Right Column - Calendar Embed */}
           <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
@@ -131,8 +78,6 @@ const ScheduleSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ScheduleSection;
