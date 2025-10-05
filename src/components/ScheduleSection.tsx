@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, CheckCircle, DollarSign, TrendingUp, Users } from "lucide-react";
+import { useEffect } from "react";
 const ScheduleSection = () => {
   const callDetails = ["Custom growth strategy for your market", "Territory analysis and opportunity assessment", "ROI projections and timeline expectations", "Detailed investment breakdown and terms"];
   const qualifications = ["Currently doing $300K+ in annual revenue", "Have capacity to take on additional projects", "Ready to invest in proven growth systems", "Serious about scaling your land clearing business"];
@@ -17,6 +18,20 @@ const ScheduleSection = () => {
     value: "89%",
     label: "Success Rate"
   }];
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
 
   return <section id="schedule" className="py-24 bg-gradient-dark relative overflow-hidden">
       {/* Background Elements */}
@@ -50,6 +65,10 @@ const ScheduleSection = () => {
               <p className="text-white/70 text-center mb-6">
                 Select a time that works best for your schedule
               </p>
+              
+              {/* Calendly inline widget begin */}
+              <div className="calendly-inline-widget" data-url="https://calendly.com/niels-genzi/call" style={{minWidth:'320px', height:'700px'}}></div>
+              {/* Calendly inline widget end */}
               
               <div className="mt-6 text-center">
                 <p className="text-white/60 text-sm">
