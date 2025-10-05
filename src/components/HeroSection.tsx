@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Search, Star } from "lucide-react";
+import { Play, Star } from "lucide-react";
 import heroImage from "@/assets/hero-auto-detailing.jpg";
+import googleLogo from "@/assets/google-logo.png";
 const HeroSection = () => {
   return <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
       
@@ -32,7 +33,7 @@ when you get results.</p>
             
           </div>
           <div className="flex items-center gap-2 text-primary">
-            <Search className="w-5 h-5" />
+            <img src={googleLogo} alt="Google" className="w-5 h-5" />
             <div className="flex items-center gap-1">
               <div className="flex items-center">
                 <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
