@@ -182,6 +182,60 @@ const ResultsSection = () => {
           </Card>
         </div>
 
+        {/* Google Ads Case Studies */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Google Ads Case Studies
+              </span>
+            </h3>
+            <p className="text-muted-foreground">
+              Real performance data from our clients' Google Ads campaigns
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-background border-border/50 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://drive.google.com/file/d/1DrXa3M7JQVlwnfFMhklSymYauAAVP2T6/preview"
+                    className="w-full h-full"
+                    allow="autoplay"
+                    title="Google Ads Case Study 1"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-border/50 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://drive.google.com/file/d/1zA7IngGWvHYjUF5O88gxzCz8d5y12Cd9/preview"
+                    className="w-full h-full"
+                    allow="autoplay"
+                    title="Google Ads Case Study 2"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-border/50 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://drive.google.com/file/d/1szLC9UCMUr5YIe9u6tn2W_tvJfSSuICV/preview"
+                    className="w-full h-full"
+                    allow="autoplay"
+                    title="Google Ads Case Study 3"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         {/* Written Testimonials */}
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
