@@ -182,8 +182,33 @@ const ResultsSection = () => {
           </Card>
         </div>
 
+        {/* Written Testimonials */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="bg-background border-border/50">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <blockquote className="text-foreground italic mb-6">
+                  "{testimonial.quote}"
+                </blockquote>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="text-muted-foreground text-sm">{testimonial.business}</p>
+                  </div>
+                  <Badge variant="secondary">{testimonial.result}</Badge>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
         {/* Google Ads Case Studies */}
-        <div className="mb-16">
+        <div>
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-3">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -234,31 +259,6 @@ const ResultsSection = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
-
-        {/* Written Testimonials */}
-        <div className="grid md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-background border-border/50">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="text-foreground italic mb-6">
-                  "{testimonial.quote}"
-                </blockquote>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                    <p className="text-muted-foreground text-sm">{testimonial.business}</p>
-                  </div>
-                  <Badge variant="secondary">{testimonial.result}</Badge>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </div>
     </section>
