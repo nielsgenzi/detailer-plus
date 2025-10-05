@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Play, Star } from "lucide-react";
 import heroImage from "@/assets/hero-auto-detailing.jpg";
 import googleLogo from "@/assets/google-logo.png";
+import trustpilotLogo from "@/assets/trustpilot-logo.png";
 const HeroSection = () => {
   return <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
       
@@ -51,6 +52,7 @@ when you get results.</p>
             </div>
           </div>
           <div className="flex items-center gap-2 text-primary">
+            <img src={trustpilotLogo} alt="Trustpilot" className="w-5 h-5" />
             <div className="flex items-center gap-1">
               <div className="flex items-center">
                 <Star className="w-4 h-4 fill-green-500 text-green-500" />
