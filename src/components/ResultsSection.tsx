@@ -37,14 +37,14 @@ const ResultsSection = () => {
     {
       name: "Mike Rodriguez",
       business: "Elite Auto Detailing",
-      result: "$87K monthly increase",
+      result: "$8K monthly increase",
       quote: "Detailer Plus transformed our business. We went from struggling to book clients to having a 3-week waiting list.",
       rating: 5
     },
     {
       name: "Sarah Johnson",
       business: "Pristine Car Care",
-      result: "$63K monthly increase",
+      result: "$15K monthly increase",
       quote: "The quality of leads is incredible. Every client that comes through Detailer Plus is ready to invest in premium services.",
       rating: 5
     }
