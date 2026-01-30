@@ -21,12 +21,12 @@ const ScheduleSection = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
+    script.src = 'https://link.msgsndr.com/js/form_embed.js';
+    script.type = 'text/javascript';
     document.head.appendChild(script);
 
     return () => {
-      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      const existingScript = document.querySelector('script[src="https://link.msgsndr.com/js/form_embed.js"]');
       if (existingScript) {
         document.head.removeChild(existingScript);
       }
@@ -66,9 +66,13 @@ const ScheduleSection = () => {
                 Select a time that works best for your schedule
               </p>
               
-              {/* Calendly inline widget begin */}
-              <div className="calendly-inline-widget" data-url="https://calendly.com/niels-genzi/call" style={{minWidth:'320px', height:'700px'}}></div>
-              {/* Calendly inline widget end */}
+              {/* LeadConnector booking widget */}
+              <iframe 
+                src="https://api.leadconnectorhq.com/widget/booking/W98PeNxWProaHikqNczi" 
+                style={{width: '100%', border: 'none', overflow: 'hidden', minHeight: '700px'}} 
+                scrolling="no" 
+                id="W98PeNxWProaHikqNczi_1769768878468"
+              />
               
               <div className="mt-6 text-center">
                 <p className="text-white/60 text-sm">
