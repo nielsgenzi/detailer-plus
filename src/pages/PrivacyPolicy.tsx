@@ -82,8 +82,8 @@ const PrivacyPolicy = () => {
             <h2 className="text-xl font-semibold mb-3">9. Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact us at{" "}
-              <a href="mailto:info@detailerplus.com" className="text-primary hover:underline">
-                info@detailerplus.com
+              <a href="mailto:plus.detailer@gmail.com" className="text-primary hover:underline">
+                plus.detailer@gmail.com
               </a>.
             </p>
           </section>
