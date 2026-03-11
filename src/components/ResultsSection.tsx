@@ -5,7 +5,6 @@ import {
   TrendingUp, 
   DollarSign, 
   MapPin,
-  Play,
   Star
 } from "lucide-react";
 
